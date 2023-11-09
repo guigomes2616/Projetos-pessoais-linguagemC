@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	printf("Digite um valor para as 7 posicoes do vetor, que ao final sera organizado de forma crescente: \n"); /*Mensagem para o usuario */
 	
 	for(i=0;i<7;i++){ /* For inicia um loop que irá se repetir 7 vezes para ler os valores do usuário e armazená-los no vetor */
-		printf("\n Digite um numero para a posicao %i:", i); /* Mensagem pedindo ao usuário que insira um número na posição atual do loop */
+		printf("\n Digite um numero para a posicao [%i]:", i); /* Mensagem pedindo ao usuário que insira um número na posição atual do loop */
 		scanf("%i", &vetor[i]); /* Lê o número inteiro digitado pelo usuário e o armazena na posição i do vetor */
 	}
 	
@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	for(i=0;i<7;i++){ /* Esse loop for é usado para imprimir os valores do vetor agora classificados em ordem crescente */
-		printf("\n O valor da posicao %i agora e %i: \n", i,vetor[i]); /* Imprime a posição e o valor correspondente no vetor após a ordenação */
+		printf("\n O valor da posicao [%i] agora e [%i]: \n", i,vetor[i]); /* Imprime a posição e o valor correspondente no vetor após a ordenação */
 	}
 	
 	return 0;
